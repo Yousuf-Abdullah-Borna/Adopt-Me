@@ -1,0 +1,19 @@
+{
+  "name": "adopt-me",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yousuf-Abdullah-Borna/Adopt-Me.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yousuf-Abdullah-Borna/Adopt-Me/issues"
+  },
+  "homepage": "https://github.com/Yousuf-Abdullah-Borna/Adopt-Me#readme"
+}
