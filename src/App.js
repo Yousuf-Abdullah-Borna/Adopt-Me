@@ -5,15 +5,17 @@ import  Pet  from './Pet';
 
 //component
 const App = () => {
-  return React.createElement(
-    "div",
-    {},
-    React.createElement("h1", {}, "Adopt Me!"),
-    React.createElement(Pet, { id: "5", name: "Sam", age: 15 }),
-    React.createElement(Pet, { id: "2", name: "Kam", age: 16 }),
-    React.createElement(Pet, { id: "3", name: "em", age: 17 })
-  );
-};
+  return (
+
+    <div>
+      <h1>Adopt me!</h1>
+      <Pet name="Sam" animal='Cat' breed='Havanesse'/>
+      <Pet name="Pepper" animal='Bird' breed='Cockatiel'/>
+      <Pet name="Doink" animal='Cat' breed='Mixed'/>
+    </div>
+
+  )
+}
 
 //render the app
-render(React.createElement(App), document.getElementById("root"));
+render(<App/>, document.getElementById("root"));

@@ -29784,11 +29784,13 @@ var _react = _interopRequireDefault(require("react"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+//THIS COMPONENT IS USED FOR PET
+//AND IT USES PROPS LIKE NAME,ANIMAL,BREED
 function Pet(_ref) {
-  var id = _ref.id,
-      name = _ref.name,
-      age = _ref.age;
-  return _react.default.createElement("div", {}, _react.default.createElement("h1", {}, id), _react.default.createElement("h3", {}, name), _react.default.createElement("h1", {}, age));
+  var name = _ref.name,
+      animal = _ref.animal,
+      breed = _ref.breed;
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h1", null, name), /*#__PURE__*/_react.default.createElement("h2", null, animal), /*#__PURE__*/_react.default.createElement("h2", null, breed));
 }
 
 ;
@@ -29805,23 +29807,23 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 //component
 var App = function App() {
-  return _react.default.createElement("div", {}, _react.default.createElement("h1", {}, "Adopt Me!"), _react.default.createElement(_Pet.default, {
-    id: "5",
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h1", null, "Adopt me!"), /*#__PURE__*/_react.default.createElement(_Pet.default, {
     name: "Sam",
-    age: 15
-  }), _react.default.createElement(_Pet.default, {
-    id: "2",
-    name: "Kam",
-    age: 16
-  }), _react.default.createElement(_Pet.default, {
-    id: "3",
-    name: "em",
-    age: 17
+    animal: "Cat",
+    breed: "Havanesse"
+  }), /*#__PURE__*/_react.default.createElement(_Pet.default, {
+    name: "Pepper",
+    animal: "Bird",
+    breed: "Cockatiel"
+  }), /*#__PURE__*/_react.default.createElement(_Pet.default, {
+    name: "Doink",
+    animal: "Cat",
+    breed: "Mixed"
   }));
 }; //render the app
 
 
-(0, _reactDom.render)(_react.default.createElement(App), document.getElementById("root"));
+(0, _reactDom.render)( /*#__PURE__*/_react.default.createElement(App, null), document.getElementById("root"));
 },{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./Pet":"Pet.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';

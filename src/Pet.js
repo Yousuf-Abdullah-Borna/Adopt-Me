@@ -1,11 +1,22 @@
 import React from 'react';
 
-export default function Pet({ id, name, age }){
-  return React.createElement(
-    "div",
-    {},
-    React.createElement("h1", {}, id),
-    React.createElement("h3", {}, name),
-    React.createElement("h1", {}, age)
-  );
+
+//THIS COMPONENT IS USED FOR PET
+//AND IT USES PROPS LIKE NAME,ANIMAL,BREED
+export default function Pet({ name, animal, breed }){
+  
+
+
+    return (
+        <div>
+             <h1>{name}</h1>
+              <h2>{animal}</h2>
+             <h2>{breed}</h2>
+
+
+        </div>
+
+
+    )
+
 };
