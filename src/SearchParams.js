@@ -1,4 +1,6 @@
 import React,{useState} from 'react';
+import {ANIMALS} from '@frontendmasters/pet';
+import useDropdown from './useDropdown';
 
 
 //THIS COMPONENT IS USED FOR SEARCH OPTION
@@ -7,17 +9,35 @@ import React,{useState} from 'react';
 const SearchParams = () =>{
 
 const [location,setLocation] = useState('Seattle,WA');
+//const [animal,setAnimal] = useState("dog");
+//const [breed, setBreed] = useState("");
+const [breeds, setBreeds] = useState([]);
+
+const [animal, AnimalDropdown] = useDropdown("Animal","dog",ANIMALS);
+const [breed, BreedDropdown] = useDropdown("Breed","",breeds);
 
 return (
 
     <div className="search-params">
-           {location}
+           
         <form>
     
             <label htmlFor="location">
               Location
-              <input id="location" value={location} placeholder="Enter a location" onChange= {e => setLocation(e.target.value)}/>
+              <input id="location" 
+              value={location} 
+              placeholder="Enter a location" 
+              onChange= {e => setLocation(e.target.value)}/>
+            
+            
             </label>
+
+            <AnimalDropdown/>
+            <BreedDropdown/>
+        
+            
+
+
             <button>
                 Submit
             </button>
