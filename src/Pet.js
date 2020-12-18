@@ -3,7 +3,7 @@ import React from 'react';
 
 //THIS COMPONENT IS USED FOR PET
 //AND IT USES PROPS LIKE NAME,ANIMAL,BREED
-export default function Pet({ name, animal, breed }){
+export default function Pet({ name, animal, breed,media,location,id }){
   
 
 
