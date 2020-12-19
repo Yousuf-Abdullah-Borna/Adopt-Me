@@ -1,7 +1,10 @@
 import React from 'react';
 import { render } from 'react-dom';
+import { Router,Link } from '@reach/router';
 import  Pet  from './Pet';
 import SearchParams from './SearchParams';
+import Details from './Details';
+
 
 
 //APP COMPONENT IS REPRESENTING THE WHOLE APPLICATION
@@ -11,8 +14,16 @@ const App = () => {
   return (
 
     <div>
-      <h1>Adopt me!</h1>
-      <SearchParams/>
+     
+      <header>
+          
+          <Link to="/">Adopt me!</Link>
+          </header>
+     
+      <Router>
+      <SearchParams path="/"/>
+      <Details path="/details/:id"/>
+      </Router>
       
     </div>
 
